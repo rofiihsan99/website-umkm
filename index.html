@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Sore - Beranda</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Path diperbarui ke folder css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <h1>Cafe Sore</h1>
         <p>Nongkrong dan ngafe santai di Pekalongan.</p>
-        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&auto=format&fit=crop" alt="Suasana interior dan meja kopi Cafe Sore Pekalongan" width="500">
+        
+        <img src="assets/cafe.jpg" alt="Suasana interior dan meja kopi Cafe Sore Pekalongan" width="500">
         <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
@@ -72,7 +74,8 @@
             <h2>Jam Buka &amp; Lokasi</h2>
             <p>Jam Operasional: Setiap Hari, 13.00 - 18.00 WIB</p>
             <p>Lokasi: Jl. Gadjah Mada, Pekalongan.</p>
-            <p>Hubungi kami melalui <a href="https://wa.me/6281578019611" target="_blank" rel="noopener noreferrer">WhatsApp Cafe Sore</a> untuk pemesanan.</p>
+            <!-- Tautan WA dikoreksi agar mengarah ke nomormu -->
+            <p>Hubungi kami melalui <a href="https://wa.me/6281575019664" target="_blank" rel="noopener noreferrer">WhatsApp Cafe Sore</a> untuk pemesanan.</p>
         </section>
     </main>
 
@@ -83,12 +86,14 @@
     <div id="baristaModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" id="closeModal">&times;</span>
-            <h3>Barista Cafe Sore Menyapa <img src="mug-hot-solid-full.svg" alt="Ikon Kopi" class="icon-kopi"></h3>
+           
+            <h3>Barista Cafe Sore Menyapa <img src="assets/mug-hot-solid-full.svg" alt="Ikon Kopi" class="icon-kopi"></h3>
             <p>Halo! Selamat datang di Cafe Sore, Mau pesan kopi apa hari ini?</p>
             <button id="okModalBtn">Siap, Mau Lihat Menu!</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+   
+    <script src="js/script.js"></script>
 </body>
 </html>
