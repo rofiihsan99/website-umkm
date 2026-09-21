@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Cafe Sore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Cafe Sore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Katalog Produk</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hubungi Kami</h2>
+            <p>Silakan isi formulir di bawah ini untuk mengirimkan pertanyaan, kritik, atau saran kepada Cafe Sore.</p>
+            
+            <form action="#" method="POST">
+                <div>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required minlength="3">
+                </div>
+                
+                <div>
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+
+                <div>
+                    <label for="telepon">Nomor WhatsApp:</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+                </div>
+
+                <div>
+                    <label for="paket">Paket Diminati:</label>
+                    <select id="paket" name="paket" required>
+                        <option value="" disabled selected>Pilih paket...</option>
+                        <option value="kopi">Paket Kopi Susu Sore</option>
+                        <option value="nongkrong">Paket Nongkrong Hemat</option>
+                        <option value="keluarga">Paket Keluarga &amp; Rombongan</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Topik Pesan:</legend>
+                    <div>
+                        <input type="radio" id="topik-tanya" name="topik" value="pertanyaan" required checked>
+                        <label for="topik-tanya">Pertanyaan Menu / Lokasi</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="topik-saran" name="topik" value="saran" required>
+                        <label for="topik-saran">Kritik &amp; Saran</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="topik-booking" name="topik" value="reservasi" required>
+                        <label for="topik-booking">Reservasi Tempat</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pilih Waktu Kontak yang Diinginkan:</legend>
+                    <div>
+                        <input type="checkbox" id="waktu-pagi" name="waktu_kontak" value="pagi">
+                        <label for="waktu-pagi">Pagi Hari (09.00 - 12.00)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="waktu-sore" name="waktu_kontak" value="sore">
+                        <label for="waktu-sore">Sore / Malam Hari (15.00 - 21.00)</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="pesan">Pesan atau Catatan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." required minlength="10"></textarea>
+                </div>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cafe Sore Pekalongan. All rights reserved.</p>
+    </footer>
+
+    <script src="js/form.js" defer></script>
+</body>
+</html>
