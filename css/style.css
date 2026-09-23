@@ -1,3 +1,22 @@
+:root {
+    
+    --color-primary: #8c533e;
+    --color-primary-strong: #4a2c2a;
+    --color-text: #333333;
+    --color-muted: #666666;
+    --color-surface: #ffffff;
+    --color-border: #ccc;
+    --color-focus: #8c533e;
+    
+    --space-1: 6px;
+    --space-2: 8px;
+    --space-3: 15px;
+    --space-4: 25px;
+    
+    --radius-sm: 6px;
+    --radius-md: 8px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,33 +27,33 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f4f1ea;
-    color: #333;
-    padding: 20px;
+    color: var(--color-text);
+    padding: var(--space-4);
     text-align: center;
 }
 
 /* Header & Navigasi */
 header {
-    background-color: #ffffff;
-    padding: 25px;
+    background-color: var(--color-surface);
+    padding: var(--space-4);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
+    margin-bottom: var(--space-4);
 }
 
 header h1 {
-    color: #4a2c2a;
+    color: var(--color-primary-strong);
     font-size: 2.2rem;
     margin-bottom: 5px;
 }
 
 header p {
-    color: #666;
-    margin-bottom: 15px;
+    color: var(--color-muted);
+    margin-bottom: var(--space-3);
 }
 
 header img {
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     max-width: 100%;
     height: auto;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -52,54 +71,54 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #8c533e;
+    color: var(--color-primary);
     font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 6px;
+    padding: var(--space-1) 14px;
+    border-radius: var(--radius-sm);
     transition: background-color 0.2s, color 0.2s;
 }
 
-nav a:hover, nav a:focus {
-    background-color: #8c533e;
-    color: #ffffff;
+nav a:hover, nav a:focus-visible {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
     outline: none;
 }
 
-/*  Utama & Section Card */
+/* Utama & Section Card */
 main {
     max-width: 850px;
     margin: 0 auto;
 }
 
 section {
-    background: #ffffff;
-    padding: 20px;
+    background: var(--color-surface);
+    padding: var(--space-3);
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     box-shadow: 0 2px 5px rgba(0,0,0,0.04);
 }
 
 section h2 {
-    color: #4a2c2a;
+    color: var(--color-primary-strong);
     margin-bottom: 12px;
     border-bottom: 2px solid #f4f1ea;
     padding-bottom: 5px;
 }
 
-/*  Kartu Menu Favorit */
+/* Kartu Menu Favorit */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    gap: var(--space-3);
     margin-top: 15px;
 }
 
 .menu-item {
     background-color: #faf8f5;
     border: 1px solid #eee;
-    border-left: 4px solid #8c533e;
-    border-radius: 8px;
-    padding: 15px;
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -114,31 +133,31 @@ section h2 {
 
 .menu-item h3 {
     font-size: 1.05rem;
-    color: #4a2c2a;
+    color: var(--color-primary-strong);
     margin-bottom: 6px;
 }
 
 .menu-item .deskripsi {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--color-muted);
     margin-bottom: 12px;
     line-height: 1.4;
 }
 
 .menu-item .harga {
     font-weight: bold;
-    color: #fff;
+    color: var(--color-surface);
     font-size: 0.85rem;
     align-self: flex-start;
-    background: #8c533e;
+    background: var(--color-primary);
     padding: 4px 10px;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
 }
 
 /* Tombol Sapa Barista */
 #sapaButton {
     background-color: #e0a96d;
-    color: #fff;
+    color: var(--color-surface);
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -148,16 +167,16 @@ section h2 {
     transition: background-color 0.2s;
 }
 
-#sapaButton:hover, #sapaButton:focus {
+#sapaButton:hover, #sapaButton:focus-visible {
     background-color: #c88a4b;
-    outline: 2px solid #4a2c2a;
+    outline: 2px solid var(--color-primary-strong);
 }
 
 /* Footer */
 footer {
     margin-top: 30px;
     font-size: 0.85rem;
-    color: #777;
+    color: var(--color-muted);
 }
 
 /* Pop-up Modal Custom */
@@ -174,9 +193,9 @@ footer {
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background-color: var(--color-surface);
     margin: 15% auto;
-    padding: 25px;
+    padding: var(--space-4);
     border-radius: 12px;
     width: 90%;
     max-width: 400px;
@@ -201,30 +220,29 @@ footer {
 }
 
 .modal-content h3 {
-    color: #4a2c2a;
+    color: var(--color-primary-strong);
     margin-bottom: 10px;
 }
 
 .modal-content p {
-    color: #555;
+    color: var(--color-muted);
     margin-bottom: 20px;
 }
 
 #okModalBtn {
-    background-color: #8c533e;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
     border: none;
     padding: 8px 16px;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     font-weight: bold;
 }
 
 #okModalBtn:hover {
-    background-color: #4a2c2a;
+    background-color: var(--color-primary-strong);
 }
 
-/*  ukuran ikon SVG agar sejajar dengan teks */
 .icon-kopi {
     width: 24px;
     height: 24px;
@@ -237,7 +255,7 @@ form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: var(--space-3); 
 }
 
 form div {
@@ -256,17 +274,17 @@ form input[type="email"],
 form input[type="tel"],
 form textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
 }
 
 form fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-3);
     margin: 10px 0;
     text-align: left;
 }
@@ -289,17 +307,24 @@ form fieldset input[type="checkbox"] {
 }
 
 form button[type="submit"] {
-    background-color: #6f4e37; /* Warna tema cokelat kopi */
-    color: white;
+    background-color: var(--color-primary-strong);
+    color: var(--color-surface);
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
 }
 
-form button[type="submit"]:hover {
-    background-color: #563b28;
+form button[type="submit"]:hover,
+form button[type="submit"]:focus-visible {
+    background-color: var(--color-primary);
+    outline: 2px solid var(--color-focus);
+}
+
+a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
 }
