@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Sore - Katalog Produk</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
 
@@ -23,7 +25,16 @@
     </header>
 
     <main>
-       
+        <!-- Section Target Render js -->
+        <section class="section" aria-labelledby="produk-dinamis-title">
+            <div class="section-header">
+                <p class="eyebrow">Data JavaScript</p>
+                <h2 id="produk-dinamis-title">Produk dari Data Lokal</h2>
+                <p id="produk-ringkasan">Data produk akan dimuat di JavaScript.</p>
+            </div>
+            <div id="produk-dinamis" class="js-product-grid"></div>
+        </section>
+
         <section id="highlight-produk">
             <h2>Produk Unggulan Kami</h2>
             <div style="display: flex; gap: 20px; flex-wrap: wrap;">
